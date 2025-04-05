@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hawks - Bienvenida</title>
+  <link rel="icon" href="HAWKS Soluciones Integrales logo sin fondo.png" type="image/png">
   <style>
     * {
       box-sizing: border-box;
@@ -42,12 +43,26 @@
       max-width: 600px;
     }
 
+    .warning {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    .warning-icon {
+      font-size: 1.5rem;
+      color: #ffcc00;
+    }
+
     @media (max-width: 600px) {
       header {
         font-size: 2rem;
       }
 
-      p {
+      p, .warning {
         font-size: 1rem;
       }
 
@@ -56,11 +71,16 @@
       }
     }
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>Hawks</header>
+  <header>Hawks - Soluciones Integrales</header>
   <img src="HAWKS Soluciones Integrales logo sin fondo.png" alt="Logo de Hawks">
-  <p>Sitio en construcción.</p>
+  <div class="warning">
+    <span class="warning-icon">⚠️</span>
+    <span>Sitio en construcción.</span>
+    <span class="warning-icon">⚠️</span>
+  </div>
   <p>Próximamente vas a conocer todo lo que Hawks - Soluciones Integrales tiene para ofrecerte.</p>
   <p>Por consultas, podés comunicarte vía mail con nosotros: <a href="mailto:info.hawks.si@gmail.com" style="color: #00d9ff; text-decoration: none;">info.hawks.si@gmail.com</a></p>
 </body>
