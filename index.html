@@ -172,16 +172,26 @@ a:hover {
   color: #ffcc00;
 }
 
+.payment-divider {
+  border: none;
+  border-top: 2px solid black;
+  margin: 40px auto 0 auto;
+  width: 80%;
+}
+
 .payment-methods {
-  margin-top: 60px;
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* claro pero semitransparente */
+  padding: 30px 20px;
+  margin-top: 0;
   text-align: center;
   color: #ffffff;
+  border-radius: 10px;
 }
 
 .payment-methods h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .payment-icons {
@@ -206,6 +216,7 @@ a:hover {
 
 .payment-item span {
   font-size: 1rem;
+  color: #ffffff;
 }
 
   </style>
@@ -310,6 +321,7 @@ a:hover {
   </script>
 
 <!-- Medios de Pago -->
+<hr class="payment-divider">
 <section class="payment-methods">
   <h2>Medios de pago aceptados:</h2>
   <div class="payment-icons">
@@ -331,6 +343,7 @@ a:hover {
     </div>
   </div>
 </section>
+
 
 </body>
 </html>
