@@ -172,26 +172,30 @@ a:hover {
   color: #ffcc00;
 }
 
+.payment-wrapper {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo más claro */
+  padding: 40px 0;
+}
+
 .payment-divider {
   border: none;
   border-top: 2px solid black;
-  margin: 40px auto 0 auto;
-  width: 80%;
+  margin: 0 auto 30px auto;
+  width: 100%;
 }
 
 .payment-methods {
-  background-color: rgba(255, 255, 255, 0.1); /* claro pero semitransparente */
-  padding: 30px 20px;
-  margin-top: 0;
   text-align: center;
   color: #ffffff;
-  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .payment-methods h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #ffffff;
 }
 
 .payment-icons {
@@ -321,28 +325,31 @@ a:hover {
   </script>
 
 <!-- Medios de Pago -->
-<hr class="payment-divider">
-<section class="payment-methods">
-  <h2>Medios de pago aceptados:</h2>
-  <div class="payment-icons">
-    <div class="payment-item">
-      <img src="Efectivo.png" alt="Efectivo">
-      <span>Efectivo</span>
+<div class="payment-wrapper">
+  <hr class="payment-divider">
+  <section class="payment-methods">
+    <h2>Medios de pago aceptados:</h2>
+    <div class="payment-icons">
+      <div class="payment-item">
+        <img src="Efectivo.png" alt="Efectivo">
+        <span>Efectivo</span>
+      </div>
+      <div class="payment-item">
+        <img src="MercadoPago.png" alt="MercadoPago">
+        <span>MercadoPago</span>
+      </div>
+      <div class="payment-item">
+        <img src="Tarjeta.png" alt="Tarjeta">
+        <span>Tarjeta</span>
+      </div>
+      <div class="payment-item">
+        <img src="Transferencia.png" alt="Transferencia Bancaria">
+        <span>Transferencia bancaria</span>
+      </div>
     </div>
-    <div class="payment-item">
-      <img src="MercadoPago.png" alt="MercadoPago">
-      <span>MercadoPago</span>
-    </div>
-    <div class="payment-item">
-      <img src="Tarjeta.png" alt="Tarjeta">
-      <span>Tarjeta</span>
-    </div>
-    <div class="payment-item">
-      <img src="Transferencia.png" alt="Transferencia Bancaria">
-      <span>Transferencia bancaria</span>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
+
 
 
 </body>
