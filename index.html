@@ -172,6 +172,42 @@ a:hover {
   color: #ffcc00;
 }
 
+.payment-methods {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.payment-methods h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.payment-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120px;
+}
+
+.payment-item img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.payment-item span {
+  font-size: 1rem;
+}
+
   </style>
 </head>
 <body>
@@ -272,5 +308,29 @@ a:hover {
 
     setInterval(nextSlide, 3000);
   </script>
+
+<!-- Medios de Pago -->
+<section class="payment-methods">
+  <h2>Medios de pago aceptados:</h2>
+  <div class="payment-icons">
+    <div class="payment-item">
+      <img src="Efectivo.png" alt="Efectivo">
+      <span>Efectivo</span>
+    </div>
+    <div class="payment-item">
+      <img src="MercadoPago.png" alt="MercadoPago">
+      <span>MercadoPago</span>
+    </div>
+    <div class="payment-item">
+      <img src="Tarjeta.png" alt="Tarjeta">
+      <span>Tarjeta</span>
+    </div>
+    <div class="payment-item">
+      <img src="Transferencia.png" alt="Transferencia Bancaria">
+      <span>Transferencia bancaria</span>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
