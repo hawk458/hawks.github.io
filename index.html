@@ -155,28 +155,6 @@
   }
 }
 
-.carousel-dots {
-  text-align: center;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-}
-
-.dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #ffffff;
-}
-
   </style>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -191,12 +169,7 @@
     </div>
     <button class="prev">&#10094;</button>
     <button class="next">&#10095;</button>
-    <div class="carousel-dots">
-    <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-</div>
-
+    
 
   </div>
 
@@ -213,7 +186,7 @@
 
   <p>Por consultas, podés comunicarte vía mail con nosotros: 
     <a href="mailto:info@hawks.com.ar" style="color: #00d9ff; text-decoration: none;">
-      info.hawks.si@gmail.com
+      info@hawks.com
     </a>
   </p>
 
@@ -235,20 +208,12 @@
   const images = document.querySelectorAll('.carousel-slide img');
   const prevBtn = document.querySelector('.prev');
   const nextBtn = document.querySelector('.next');
-  const dots = document.querySelectorAll('.dot');
 
   let counter = 0;
   const total = images.length;
 
   function updateSlidePosition() {
     slide.style.transform = `translateX(-${counter * 100}%)`;
-    updateDots();
-  }
-
-  function updateDots() {
-    dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === counter);
-    });
   }
 
   function nextSlide() {
@@ -264,16 +229,8 @@
   nextBtn.addEventListener('click', nextSlide);
   prevBtn.addEventListener('click', prevSlide);
 
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      counter = index;
-      updateSlidePosition();
-    });
-  });
-
   setInterval(nextSlide, 3000);
 </script>
-
 
 </body>
 </html>
