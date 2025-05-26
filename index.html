@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hawks - Bienvenida</title>
-  <link rel="icon" href="HAWKS Soluciones Integrales logo sin fondo.png" type="image/png">
+  <link rel="icon" href="HAWKS Soluciones Integrales logo sin fondo.png" type="image/png" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     * {
       box-sizing: border-box;
@@ -19,21 +20,23 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       text-align: center;
+      min-height: 100vh;
       padding: 20px;
     }
 
     header {
       font-size: 2.5rem;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
 
     img {
       max-width: 200px;
       height: auto;
+    }
+
+    .main-logo {
       margin-bottom: 30px;
     }
 
@@ -57,29 +60,106 @@
       color: #ffcc00;
     }
 
-    .links-container {
+    .link-container {
       display: flex;
-      gap: 40px;
-      margin-top: 40px;
-      flex-wrap: wrap;
+      flex-direction: row;
       justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
     }
 
-    .link-image {
+    .link-item {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .small-image {
+    .link-item img {
       max-width: 100px;
-      height: auto;
+      transition: transform 0.3s ease;
     }
 
-    .link-text {
+    .link-item img:hover {
+      transform: scale(1.1);
+    }
+
+    .link-label {
       margin-top: 10px;
       font-size: 1rem;
       color: #00d9ff;
+    }
+
+    /* Carrusel */
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      overflow: hidden;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 300%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .carousel-container button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.4);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .carousel-container button:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .carousel-dots {
+      text-align: center;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #ffffff;
     }
 
     @media (max-width: 600px) {
@@ -91,118 +171,43 @@
         font-size: 1rem;
       }
 
-      img {
+      .main-logo {
         max-width: 150px;
       }
 
-      .small-image {
+      .link-item img {
         max-width: 80px;
       }
+
+      .carousel-container {
+        max-width: 100%;
+      }
     }
-
-  .carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  overflow: hidden;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.carousel-slide {
-  display: flex;
-  width: 300%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-  flex-shrink: 0;
-}
-
-.carousel-container button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  z-index: 2;
-  transition: background-color 0.3s ease;
-}
-
-.carousel-container button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-.carousel-dots {
-  text-align: center;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-}
-
-.dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #ffffff;
-}
-
-@media (max-width: 600px) {
-  .carousel-container {
-    max-width: 100%;
-  }
-}
-
-
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>Hawks - Soluciones Integrales</header>
 
-<div class="carousel-container">
-  <div class="carousel-slide">
-    <img src="Banner1.jpg" alt="Banner 1">
-    <img src="Banner2.jpg" alt="Banner 2">
-    <img src="Banner3.jpg" alt="Banner 3">
+  <!-- Carrusel -->
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="Banner1.jpg" alt="Banner 1">
+      <img src="Banner2.jpg" alt="Banner 2">
+      <img src="Banner3.jpg" alt="Banner 3">
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
   </div>
-  <button class="prev">&#10094;</button>
-  <button class="next">&#10095;</button>
-  <div class="carousel-dots">
-    <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-</div>
 
+  <!-- Logo principal -->
+  <img src="HAWKS Soluciones Integrales logo sin fondo.png" alt="Logo de Hawks" class="main-logo">
 
-  <img src="HAWKS Soluciones Integrales logo sin fondo.png" alt="Logo de Hawks">
-
+  <!-- Mensajes -->
   <div class="warning">
     <span class="warning-icon">⚠️</span>
     <span>Sitio en construcción.</span>
@@ -210,70 +215,72 @@
   </div>
 
   <p>Próximamente vas a conocer todo lo que Hawks - Soluciones Integrales tiene para ofrecerte.</p>
-
-  <p>Por consultas, podés comunicarte vía mail con nosotros: 
+  <p>
+    Por consultas, podés comunicarte vía mail con nosotros:
     <a href="mailto:info@hawks.com.ar" style="color: #00d9ff; text-decoration: none;">
-      info@hawks.com
+      info@hawks.com.ar
     </a>
   </p>
 
-  <div class="links-container">
-    <!-- Link a Sistemas de Seguridad -->
-    <a href="SistemasdeSeguridad.html" class="link-image">
-      <img src="HAWKS Sistemas de Seguridad sin fondo.png" alt="Sistemas de Seguridad" title="Sistemas de Seguridad" class="small-image">
-      <span class="link-text">División Sistemas de Seguridad</span>
-    </a>
-
-    <!-- Link a Sistemas Informáticos -->
-    <a href="SistemasInformaticos.html" class="link-image">
-      <img src="HAWKS Sistemas Informaticos sin fondo.png" alt="Sistemas Informáticos" title="Sistemas Informáticos" class="small-image">
-      <span class="link-text">División Sistemas Informáticos</span>
-    </a>
+  <!-- Accesos -->
+  <div class="link-container">
+    <div class="link-item">
+      <a href="SistemasdeSeguridad.html">
+        <img src="HAWKS Sistemas de Seguridad sin fondo.png" alt="Sistemas de Seguridad" title="Sistemas de Seguridad" />
+      </a>
+      <span class="link-label">División Sistemas de Seguridad</span>
+    </div>
+    <div class="link-item">
+      <a href="SistemasInformaticos.html">
+        <img src="HAWKS Sistemas Informaticos sin fondo.png" alt="Sistemas Informáticos" title="Sistemas Informáticos" />
+      </a>
+      <span class="link-label">División Sistemas Informáticos</span>
+    </div>
   </div>
-<script>
-  const slide = document.querySelector('.carousel-slide');
-  const images = document.querySelectorAll('.carousel-slide img');
-  const prevBtn = document.querySelector('.prev');
-  const nextBtn = document.querySelector('.next');
-  const dots = document.querySelectorAll('.dot');
 
-  let counter = 0;
-  const total = images.length;
+  <!-- Script del carrusel -->
+  <script>
+    const slide = document.querySelector('.carousel-slide');
+    const images = document.querySelectorAll('.carousel-slide img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const dots = document.querySelectorAll('.dot');
 
-  function updateSlidePosition() {
-    slide.style.transform = `translateX(-${counter * 100}%)`;
-    updateDots();
-  }
+    let counter = 0;
+    const total = images.length;
 
-  function updateDots() {
-    dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === counter);
-    });
-  }
+    function updateSlidePosition() {
+      slide.style.transform = `translateX(-${counter * 100}%)`;
+      updateDots();
+    }
 
-  function nextSlide() {
-    counter = (counter + 1) % total;
-    updateSlidePosition();
-  }
+    function updateDots() {
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === counter);
+      });
+    }
 
-  function prevSlide() {
-    counter = (counter - 1 + total) % total;
-    updateSlidePosition();
-  }
-
-  nextBtn.addEventListener('click', nextSlide);
-  prevBtn.addEventListener('click', prevSlide);
-
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      counter = index;
+    function nextSlide() {
+      counter = (counter + 1) % total;
       updateSlidePosition();
+    }
+
+    function prevSlide() {
+      counter = (counter - 1 + total) % total;
+      updateSlidePosition();
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        counter = index;
+        updateSlidePosition();
+      });
     });
-  });
 
-  setInterval(nextSlide, 3000);
-</script>
-
-
+    setInterval(nextSlide, 3000);
+  </script>
 </body>
 </html>
