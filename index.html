@@ -2,28 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hawks - Soluciones Integrales</title>
 
-  <!-- Metaetiquetas estándar -->
-<meta name="description" content="Hawks - Soluciones Integrales en Sistemas de Seguridad e Informáticos.">
-<meta name="keywords" content="Hawks, soluciones integrales, sistemas de seguridad, sistemas informáticos, cámaras, alarmas, automatización, tecnología">
-<meta name="author" content="Hawks">
+  <!-- Favicon -->
+  <link rel="icon" href="images/HAWKS Soluciones Integrales logo sin fondo.png" type="image/png" />
 
-<!-- Open Graph (para Facebook y otras plataformas) -->
-<meta property="og:title" content="Hawks - Soluciones Integrales">
-<meta property="og:description" content="Descubrí todo lo que Hawks tiene para ofrecerte en seguridad y sistemas informáticos.">
-<meta property="og:image" content="preview.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.hawks.com.ar">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hawks - Soluciones Integrales" />
+  <meta property="og:description" content="Servicios profesionales en sistemas de seguridad e informática. Conocé todo lo que Hawks tiene para ofrecerte." />
+  <meta property="og:image" content="https://www.hawks.com.ar/images/preview.png" />
+  <meta property="og:url" content="https://www.hawks.com.ar" />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Hawks - Soluciones Integrales">
-<meta name="twitter:description" content="Divisiones especializadas en Seguridad e Informática. Instalaciones, sistemas, automatización y más.">
-<meta name="twitter:image" content="preview.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hawks - Soluciones Integrales" />
+  <meta name="twitter:description" content="Soluciones profesionales en seguridad e informática." />
+  <meta name="twitter:image" content="https://www.hawks.com.ar/images/preview.png" />
 
-  <title>Hawks - Bienvenida</title>
-  <link rel="icon" href="HAWKS Soluciones Integrales logo sin fondo.png" type="image/png" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     * {
@@ -247,129 +244,103 @@ a:hover {
 <body>
   <!-- Carrusel -->
   <div class="carousel-container">
-    <div class="carousel-slide" id="carousel-slide">
-      <img src="Banner1.jpg" alt="Banner 1">
-      <img src="Banner2.jpg" alt="Banner 2">
-      <img src="Banner3.jpg" alt="Banner 3">
+    <div class="carousel-slide fade">
+      <img src="images/Banner1.jpg" alt="Banner 1" />
     </div>
-    <button class="prev" id="prev">&#10094;</button>
-    <button class="next" id="next">&#10095;</button>
-    <div class="carousel-dots" id="carousel-dots">
-      <span class="dot active" data-index="0"></span>
-      <span class="dot" data-index="1"></span>
-      <span class="dot" data-index="2"></span>
+    <div class="carousel-slide fade">
+      <img src="images/Banner2.jpg" alt="Banner 2" />
+    </div>
+    <div class="carousel-slide fade">
+      <img src="images/Banner3.jpg" alt="Banner 3" />
+    </div>
+    <!-- Flechas -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    <!-- Indicadores -->
+    <div class="dots-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
   </div>
 
   <!-- Contenido principal -->
   <header>Hawks - Soluciones Integrales</header>
-  <img src="HAWKS Soluciones Integrales logo sin fondo.png" alt="Logo de Hawks" class="main-logo">
+  <img class="main-logo" src="images/HAWKS Soluciones Integrales logo sin fondo.png" alt="Logo principal" />
 
-  <p style="font-size: 1.5rem; font-weight: bold; margin-top: 20px;">Bienvenidos a Hawks</p>
-
-  <p>
-  Contamos con personal especializado en distintas áreas para brindar soluciones integrales con profesionalismo y eficiencia.
-  Nuestra <a href="SistemasdeSeguridad.html" style="color: #00d9ff; text-decoration: none; font-weight: bold;">División Sistemas de Seguridad</a>
-  se dedica a la instalación de cámaras de vigilancia (interiores y exteriores),
-  alarmas, y sistemas cableados o inalámbricos, tanto para hogares como oficinas, empresas y depósitos. Para más información,
-  podés ingresar a su página desde el enlace correspondiente.
-</p>
-
-<p>
-  Por su parte, la <a href="SistemasInformaticos.html" style="color: #00d9ff; text-decoration: none; font-weight: bold;">División Sistemas Informáticos</a>
-  está orientada a la reparación y armado de computadoras,
-  desarrollo de sistemas personalizados, automatización de procesos y gestión de bases de datos. Para conocer sus servicios,
-  accedé desde el enlace correspondiente.
-</p>
+  <p style="font-size: 1.5rem; font-weight: bold;">Bienvenidos a Hawks</p>
 
   <p>
-    Por consultas, podés comunicarte con nosotros vía mail:
-    <a href="mailto:info@hawks.com.ar" style="color: #00d9ff; text-decoration: none;">info@hawks.com.ar</a>
+    Contamos con personal especializado en distintas áreas. Nuestra 
+    <a href="SistemasdeSeguridad.html">División Sistemas de Seguridad</a> realiza instalaciones de cámaras de interior y exterior, cableadas y por wifi, alarmas, en hogares, oficinas, empresas, depósitos, entre otros. Para conocer más, ingresá a su página. Por otro lado, la 
+    <a href="SistemasInformaticos.html">División Sistemas Informáticos</a> se especializa en diversos ámbitos, desde el armado y reparación de computadoras, al desarrollo de sistemas de automatización y manejo de bases de datos. Para conocer más, ingresá al link de esta División.
   </p>
 
   <!-- Accesos -->
-  <div class="link-container">
-  <div class="link-item">
-    <a href="SistemasdeSeguridad.html">
-      <img src="HAWKS Sistemas de Seguridad sin fondo.png" alt="Sistemas de Seguridad" title="Sistemas de Seguridad" />
-    </a>
-    <a href="SistemasdeSeguridad.html" class="link-label">División Sistemas de Seguridad</a>
-  </div>
-  <div class="link-item">
-    <a href="SistemasInformaticos.html">
-      <img src="HAWKS Sistemas Informaticos sin fondo.png" alt="Sistemas Informáticos" title="Sistemas Informáticos" />
-    </a>
-    <a href="SistemasInformaticos.html" class="link-label">División Sistemas Informáticos</a>
-  </div>
-</div>
-
-  <!-- Script del carrusel -->
-  <script>
-    const slide = document.getElementById('carousel-slide');
-    const images = slide.querySelectorAll('img');
-    const prevBtn = document.getElementById('prev');
-    const nextBtn = document.getElementById('next');
-    const dots = document.querySelectorAll('.dot');
-
-    let counter = 0;
-    const total = images.length;
-
-    function updateSlide() {
-      slide.style.transform = `translateX(-${counter * 100}vw)`;
-      dots.forEach(dot => dot.classList.remove('active'));
-      dots[counter].classList.add('active');
-    }
-
-    function nextSlide() {
-      counter = (counter + 1) % total;
-      updateSlide();
-    }
-
-    function prevSlide() {
-      counter = (counter - 1 + total) % total;
-      updateSlide();
-    }
-
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-
-    dots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        counter = parseInt(dot.getAttribute('data-index'));
-        updateSlide();
-      });
-    });
-
-    setInterval(nextSlide, 3000);
-  </script>
-
-<!-- Medios de Pago -->
-<div class="payment-wrapper">
-  <hr class="payment-divider">
-  <section class="payment-methods">
-    <h2>Medios de pago aceptados:</h2>
-    <div class="payment-icons">
-      <div class="payment-item">
-        <img src="Efectivo.png" alt="Efectivo">
-        <span>Efectivo</span>
-      </div>
-      <div class="payment-item">
-        <img src="MercadoPago.png" alt="MercadoPago">
-        <span>MercadoPago</span>
-      </div>
-      <div class="payment-item">
-        <img src="Tarjeta.png" alt="Tarjeta">
-        <span>Tarjeta</span>
-      </div>
-      <div class="payment-item">
-        <img src="Transferencia.png" alt="Transferencia Bancaria">
-        <span>Transferencia bancaria</span>
-      </div>
+  <div class="access-section">
+    <div class="access-item">
+      <a href="SistemasdeSeguridad.html">
+        <img src="images/HAWKS Sistemas de Seguridad sin fondo.png" alt="Sistemas de Seguridad" title="Sistemas de Seguridad" />
+        <p>División Sistemas de Seguridad</p>
+      </a>
     </div>
-  </section>
-</div>
+    <div class="access-item">
+      <a href="SistemasInformaticos.html">
+        <img src="images/HAWKS Sistemas Informaticos sin fondo.png" alt="Sistemas Informáticos" title="Sistemas Informáticos" />
+        <p>División Sistemas Informáticos</p>
+      </a>
+    </div>
+  </div>
 
+  <!-- Sección medios de pago -->
+  <hr style="border: 1px solid black; width: 100%; margin-top: 40px;" />
+  <div class="payment-section" style="background-color: rgba(255,255,255,0.1); width: 100%; padding: 20px; text-align: center;">
+    <h3 style="margin-bottom: 20px;">Medios de pago aceptados:</h3>
+    <div class="payment-methods" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+      <div><img src="images/Efectivo.png" alt="Efectivo" style="height: 50px;" /><p>Efectivo</p></div>
+      <div><img src="images/MercadoPago.png" alt="MercadoPago" style="height: 50px;" /><p>MercadoPago</p></div>
+      <div><img src="images/Tarjeta.png" alt="Tarjeta" style="height: 50px;" /><p>Tarjeta</p></div>
+      <div><img src="images/Transferencia.png" alt="Transferencia bancaria" style="height: 50px;" /><p>Transferencia bancaria</p></div>
+    </div>
+  </div>
 
+  <!-- Contacto -->
+  <p style="margin-top: 30px;">Por consultas, podés comunicarte vía mail con nosotros: 
+    <a href="mailto:info@hawks.com.ar" style="color: #00d9ff; text-decoration: none;">info@hawks.com.ar</a>
+  </p>
+
+  <!-- Carrusel script -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n, true);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n - 1, true);
+    }
+
+    function showSlides(n, manual = false) {
+      let i;
+      let slides = document.getElementsByClassName("carousel-slide");
+      let dots = document.getElementsByClassName("dot");
+      if (n >= slides.length) { slideIndex = 0; }
+      if (n < 0) { slideIndex = slides.length - 1; }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex].style.display = "block";
+      dots[slideIndex].className += " active";
+      if (!manual) {
+        setTimeout(() => { showSlides(slideIndex += 1); }, 3000);
+      }
+    }
+  </script>
 
 </body>
 </html>
